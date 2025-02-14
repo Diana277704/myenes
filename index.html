@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORRY SAYANGKU ENES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>I'M SORRY I CAN'T LOSE YOU ENES</h1>
+        <p class="description">
+            Dear Enes 💌
+        </p>
+        My Sincere Apologies
+        I hope this message finds you well. I want to start by saying how truly sorry I am. I realize that my misunderstanding has caused unnecessary tension between us, and that’s the last thing I ever wanted. It was never my intention to hurt you or make you feel uncertain about us. I want to sincerely apologize for I'm sorry I misunderstood you. I'm sorry for my trust issues. I'm sorry I messed everything up. The thing is i really love you and sorry for did not ask clarification and blocked you. I realize that my actions may have hurt you or caused inconvenience, and for that, I am truly sorry. Anyway, Happy valentine's day sayangku💗
+        </p>
+        ...
+        </p>
+        <div class="buttons">
+            <button class="button" onclick="showLetter(1)">Why Forgiveness Matters?</button>
+            <button class="button" onclick="showLetter(2)">Why I Want to Make Things Right?</button>
+            <button class="button" onclick="showLetter(3)">Why Our Relationship is Worth Preserving?</button>
+        </div>
+        <!-- Heart GIFs -->
+        <img src="images/heart1.gif" alt="Heart Gif" class="heart-gif heart-top">
+        <img src="images/heart2.gif" alt="Heart Gif" class="heart-gif heart-bottom">
+    </div>
+
+    <!-- Modal untuk surat cinta -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <p>Forgiveness is important because it allows us to move forward, learn, and grow from our mistakes. I know that what happened may have made you feel upset or doubtful, and I completely understand that. But I hope that through this, we can find a way to understand each other better and strengthen what we have🥹❤️</p>
+            <button class="close-btn" onclick="closeModal(1)">Close</button>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <p>You mean so much to me, and I don’t want a misunderstanding to create unnecessary distance between us. I want to take responsibility for my actions and make sure that we communicate better moving forward. You deserve clarity, honesty, and reassurance, and I am committed to giving you that Despite the challenges of being in a long-distance relationship, I truly believe what we have is special. We have shared so many beautiful moments together, and I cherish every single one of them—including our video calls, our plans, and the little things that keep us connected. I don’t want to let a temporary misunderstanding overshadow the love and trust we’ve built.
+
+                I hope we can talk soon and clear things up. You’re important to me, and I want to move forward with understanding and love. Let’s make our next video call a reminder of why we chose each other in the first place.💓💌</p>
+            <button class="close-btn" onclick="closeModal(2)">Close</button>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <p>Our relationship means a lot to me. I cherish the bond we share and believe it is far too valuable to be lost over this mistake. I hope we can work through this together and come out stronger. No relationship is perfect, but true connections are built on understanding, patience, and the willingness to move forward together.
+
+                Once again, I deeply regret my actions, and I truly hope we can rebuild our trust. Thank you for taking the time to read this. I appreciate you and hope we can talk soon.
+                
+                Sincerely,
+                Diana, your stupid girlfriend💕🥹</p>
+            <button class="close-btn" onclick="closeModal(3)">Close</button>
+        </div>
+    </div>
+
+    <!-- Audio -->
+    <audio id="bg-music" autoplay loop>
+        <source src="audio/background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Ikon musik dan Spotify -->
+    <div class="icons">
+        <img src="https://icon-library.com/images/music-icon-png/music-icon-png-5.jpg" alt="Music Icon" class="icon" onclick="toggleMusic()" title="Toggle Music">
+        <a href="https://open.spotify.com/playlist/3dXSojtzP6krTlOqPcOoE4?si=mg20htcfQaCQ4_P41LY6yw&pt=3be4fdb57edb2dfbc25f71b09529e943&pi=38AgDbgMTaW2V" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174872.png" alt="Spotify Icon" class="icon" title="Open in Spotify">
+        </a>
+    </div>
+
+    <script>
+        // Function untuk menampilkan modal
+        function showLetter(letterNumber) {
+            document.getElementById('modal' + letterNumber).style.display = 'flex';
+        }
+
+        // Function untuk menutup modal
+        function closeModal(letterNumber) {
+            document.getElementById('modal' + letterNumber).style.display = 'none';
+        }
+
+        // Function untuk toggle musik
+        function toggleMusic() {
+            const audio = document.getElementById("bg-music");
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>
